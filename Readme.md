@@ -13,7 +13,7 @@ TB Added: cy.intercept, mocked data (fixtures), graphql calls or API calls
 
 # Dowload and installation
 
-Download from: `[github link]`
+Download from: `https://github.com/luisgzvs/cypress12BaseProject.git`
 Go inside project you recently dowloaded and do an npm install
 Execute: `touch .env` in the terminal inside root project
 
@@ -30,4 +30,4 @@ QA_BASE_URL=
 
 ```
 
-Finally do an `npm install` and wait to be complete and you are all set
+Finally do an `npm install` and wait to be completed and you are all set
