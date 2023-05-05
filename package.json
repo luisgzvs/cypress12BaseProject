@@ -1,0 +1,21 @@
+{
+  "name": "automation-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress open",
+    "cy:open:staging": "npx cypress open --config-file cypress/config/staging.js",
+    "cy:run:staging": "npx cypress run --config-file cypress/config/staging.js"
+  },
+  "author": "Luis Gonzalez",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.11.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}

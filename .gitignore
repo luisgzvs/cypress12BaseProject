@@ -1,0 +1,23 @@
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optinal eslit cache
+.eslintcache
+
+# vscode
+.vscode/
+
+# .env variables
+.env
+
+# package json lock
+package-lock.json
+
+# Other Files
+.DS_Store
