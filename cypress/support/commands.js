@@ -23,3 +23,23 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add(
+  'graphQLRequest',
+  (operationName, requestBody, variables) => {
+    cy.request({
+      url: 'graphql',
+      method: 'POST',
+      body: {
+        operationName,
+        query: requestBody,
+        variables: { variables }
+      }
+    }).then(response => {
+      expect(response.status).to.eq(200)
+      expect(response.body.data).to.not.be.null
+      expect(response.body.data).to.not.be.empty
+      return response
+    })
+  }
+)

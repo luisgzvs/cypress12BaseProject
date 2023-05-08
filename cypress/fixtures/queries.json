@@ -1,0 +1,8 @@
+{
+  "GetCharacters": {
+    "operationName": "getCharacters",
+    "query": "query getCharacters {\n  characters(page: 2, filter: { name: \"rick\" }) {\n    info {\n      count\n    }\n    results {\n      name\n    }\n  }\n}",
+    "variables": "",
+    "body": "characters(page: 2, filter: { name: \"rick\" }) {\n    info {\n      count\n    }\n    results {\n      name\n"
+  }
+}
