@@ -5,6 +5,7 @@ let envBaseUrl = process.env.PROD_BASE_URL
 
 if (process.env.ENVIRONMENT === 'staging')
   envBaseUrl = process.env.STAGING_BASE_URL
+if (process.env.ENVIRONMENT === 'API') envBaseUrl = process.env.GRAPHQL_ENDPOINT
 
 module.exports = defineConfig({
   e2e: {
