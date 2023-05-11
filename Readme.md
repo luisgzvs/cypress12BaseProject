@@ -1,10 +1,8 @@
 # [Initial] Web Automation Framework
 
-This is a base project to start from scratch with automation testing for a new project, supports multiple envs, uses POM antipattern, faker example, easy config, implements fixtures and mocked data, graphql calls (you can add another command to use the API calls), it also has prettier rules and git ignore file by default (cypress version 12).
+This is a base project to start from scratch with automation testing for a new project, supports multiple envs, uses POM antipattern, faker example, easy config, implements fixtures, tags, graphql calls (you can add another command to use the API calls), it also has prettier rules and git ignore file by default (cypress version 12).
 
 Also you will find an example to intercept and check graphql request
-
-TB Added: mocked data
 
 # Before you start you will need to have already installed
 
