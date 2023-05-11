@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:open": "npx cypress open",
-    "cy:run": "npx cypress open",
-    "cy:open:staging": "npx cypress open --config-file cypress/config/staging.js",
-    "cy:run:staging": "npx cypress run --config-file cypress/config/staging.js"
+    "cy:open": "npx cypress open --env grepTags=@sanity",
+    "cy:run": "npx cypress run --env grepTags=@sanity --headless",
+    "cy:run:chrome": "npx cypress run --browser chrome",
+    "cy:run:firefox": "npx cypress run --browser firefox"
   },
   "author": "Luis Gonzalez",
   "license": "ISC",
   "devDependencies": {
+    "@cypress/grep": "^3.1.5",
     "@faker-js/faker": "^7.6.0",
     "cypress": "^12.11.0"
   },

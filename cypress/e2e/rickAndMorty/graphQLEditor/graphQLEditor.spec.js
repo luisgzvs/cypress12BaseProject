@@ -16,7 +16,7 @@ describe('Search Bar Test', () => {
     })
   })
 
-  it('C456 - Get Characters API Test', () => {
+  it('C456 - Get Characters API Test', { tags: '@sanity' }, () => {
     charactersQueryData = queries.GetCharacters
     cy.graphQLRequest(
       charactersQueryData.operationName,
@@ -29,7 +29,7 @@ describe('Search Bar Test', () => {
       })
   })
 
-  it.only('C789 - Make a character request and verify results', () => {
+  it('C789 - Make a character request and verify results', () => {
     charactersQueryData = queries.GetCharacters
     cy.visit('/graphql')
     GraphQLEditorPage.verifyPageLoaded()

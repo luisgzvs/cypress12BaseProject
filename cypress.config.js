@@ -8,6 +8,7 @@ if (process.env.ENVIRONMENT === 'staging')
 if (process.env.ENVIRONMENT === 'API') envBaseUrl = process.env.GRAPHQL_ENDPOINT
 
 module.exports = defineConfig({
+  env: {},
   e2e: {
     video: false,
     baseUrl: envBaseUrl,
@@ -18,7 +19,8 @@ module.exports = defineConfig({
     pageLoadTimeout: 60000,
     responseTimeout: 30000,
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      require('@cypress/grep/src/plugin')(config)
+      return config
     }
   }
 })
